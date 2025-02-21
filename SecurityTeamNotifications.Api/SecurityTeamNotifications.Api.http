@@ -1,4 +1,4 @@
-@SecurityTeamNotifications.Api_HostAddress = http://localhost:5153
+@SecurityTeamNotifications.Api_HostAddress = http://localhost:1339
 
 GET {{SecurityTeamNotifications.Api_HostAddress}}/weatherforecast/
 Accept: application/json
