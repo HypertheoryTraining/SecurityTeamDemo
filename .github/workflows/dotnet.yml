@@ -24,5 +24,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+    - name: Unit Test
+      run: dotnet test --filter Category=Unit --no-build --verbosity normal
+    - name: System Test
+      run: dotnet test --filter Category=System --no-build --verbosity normal
