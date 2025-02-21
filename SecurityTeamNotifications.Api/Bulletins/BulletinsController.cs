@@ -13,7 +13,8 @@ public class BulletinsController : ControllerBase
         {
 
             new() { Id = Guid.NewGuid(), Topic = "IdentityServer4", Description = "IdentityServer4 is Being Delisted - Please Don't Use"},
-            new() { Id = Guid.NewGuid(), Topic = "Node 18", Description = "Node 18 is EOL"}
+            new() { Id = Guid.NewGuid(), Topic = "Node 18", Description = "Node 18 is EOL"},
+            new() { Id = Guid.NewGuid(), Topic = "New Password Policy", Description="Change your Passwords!" }
         };
 
         return Ok(bulletins);

@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi(p => { });
+builder.Services.AddOpenApi(p => { }); // builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
 var app = builder.Build();
 
@@ -17,5 +17,5 @@ var app = builder.Build();
 app.MapControllers();
 app.MapResourceNotifications();
 app.MapOpenApi();
-app.MapScalarApiReference();
+app.MapScalarApiReference(); // app.UseSwaggerUi();
 app.Run();

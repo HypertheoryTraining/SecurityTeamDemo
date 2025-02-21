@@ -4,7 +4,7 @@ public static class Api
 {
   public static IEndpointRouteBuilder MapResourceNotifications(this IEndpointRouteBuilder builder)
   {
-    builder.MapPost("/resource-notifications", (ResourceNotificationCreateModel request) =>
+    builder.MapPost("/resources-notifications", (ResourceNotificationCreateModel request) =>
     {
       var response = new ResourceNotificationResponseModel(request.ResourceId, Guid.NewGuid());
       return TypedResults.Ok(response);
